@@ -4,7 +4,7 @@
 Aleksandr Pchelnikov
 
 ## Supervisor
-[ФИО научного руководителя]
+Бекларян Армен Левонович, доцент, ФКН НИУ ВШЭ
 
 ## Thesis type
 Master’s thesis / research project
