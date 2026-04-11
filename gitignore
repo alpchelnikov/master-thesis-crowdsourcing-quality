@@ -1,0 +1,49 @@
+# ── Jupyter ───────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Data files (never commit raw data) ────────────────────────────────
+data/*.csv
+data/*.tsv
+data/*.parquet
+data/*.pkl
+data/*.feather
+*.csv
+*.parquet
+*.pkl
+*.feather
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environments ──────────────────────────────────────────────────────
+.env
+.venv/
+env/
+venv/
+.conda/
+
+# ── OS ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── Outputs (reproducible, so not tracked) ────────────────────────────
+figures/*.png
+figures/*.pdf
+figures/*.svg
+results/*.pkl
+results/*.csv
