@@ -164,7 +164,6 @@ The gradient-boosting model is additionally tuned with `GridSearchCV` over n_est
 | Confident | unanimity AND `ds_conf ≥ 0.90` | accept |
 | Likely correct | `agreement ≥ 0.67` AND `ds_conf ≥ 0.70` | accept |
 | Borderline | `agreement ≥ 0.50` | review |
-| Contested | otherwise | re-route / expert review |
 
 **Worker segmentation.** Clustering compares **three algorithms** (k-means, GMM, agglomerative) across **K ∈ {3, 4, 5, 6}** under **both** silhouette and Calinski–Harabasz scores. K = 3 is fixed for the operational segmentation. Two robustness checks: (a) ARI between the K = 3 assignment and K ∈ {3, 5} alternatives quantifies stability under alternative cluster counts; (b) re-running k-means on behaviour-only features (without `quality_score`) and checking whether the resulting clusters still stratify by quality rules out the concern that the segmentation is tautologically driven by the composite score.
 
